@@ -7,8 +7,8 @@
 # The form is hostname.pop.yourdomain.tld
 #
 Puppet::Parser::Functions.newfunction('pop',:type => :rvalue) do
-    default = "broken"
-    valid = %w{dfw1 lab0 sea0}
+    default = "vagrant"
+    valid = %w{vagrant internal aws-us-east1}
     pop = nil
 
     # Try to find a valid pop name in the fully-qualified hostname
