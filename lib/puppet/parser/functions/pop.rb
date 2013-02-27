@@ -6,7 +6,7 @@
 #
 # The form is hostname.pop.yourdomain.tld
 #
-Puppet::Parser::Functions.newfunction('pop',:type => :rvalue) do
+Puppet::Parser::Functions.newfunction('pop',:type => :rvalue) do |args|
     default = "vagrant"
     valid = %w{vagrant internal aws-us-east1}
     pop = nil
